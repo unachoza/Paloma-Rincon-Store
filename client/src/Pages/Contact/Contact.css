@@ -1,0 +1,52 @@
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  align-items: flex-start;
+}
+input {
+  margin: 10px;
+  width: 100%;
+  border: none;
+}
+textarea {
+  border: none;
+  margin: 10px;
+  margin-top: 38px;
+}
+::placeholder {
+  color: black;
+  font-size: 18px;
+}
+.input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  border: solid black;
+  color: black;
+  height: 55px;
+  margin: 10px;
+}
+textarea {
+  margin-bottom: 290px;
+  padding: 10px 0px;
+}
+textarea::placeholder {
+  font-size: 18px;
+}
+div #message {
+  border: solid black;
+  height: 300px;
+}
+button {
+  height: 55px;
+  width: 290px;
+  background-color: #99f0e2;
+  margin: 0px 10px;
+  font-size: 18px;
+  border: solid 1px black;
+}

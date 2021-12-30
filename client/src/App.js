@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import About from "./Components/About.js"
+import About from "./Pages/About.js"
+import Contact from "./Pages/Contact/Contact.js"
 
 function App() {
   return (
@@ -14,6 +15,11 @@ function App() {
             exact
             path="/about"
             render={(props) => <About {...props} />}
+          />
+          <Route
+            exact
+            path="/contact"
+            render={(props) => <Contact {...props} />}
           />
         </Switch>
         </BrowserRouter>
