@@ -1,0 +1,42 @@
+/* items */
+.icon{
+  height: 250px;
+  position: fixed;
+  z-index: 100;
+  }
+  .square{
+    position: absolute;
+    width:196px;
+    height: 196px;
+    border: solid black;
+    background: linear-gradient(
+  140deg, rgb(247, 175, 235) 20%, rgb(242, 219, 136) 70%);
+  }
+  #icon>div:before {
+    float: left;
+    content: "\00a0";
+    width: 50px;
+    height: 51px;
+  }
+  .square-one{
+    margin: 15px 0px 0px 15px;
+  }
+  .square-two{
+    margin: 30px 0px 0px 30px;
+  
+  }
+  .square-three{
+    margin: 45px 15px 15px 45px;
+    background: white;
+    display: flex;
+    align-items: center;
+  }
+   img {
+    width:196px
+  }
+  .sidebar-nav {
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 0;
+  }

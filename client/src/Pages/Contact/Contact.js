@@ -3,7 +3,7 @@ import "./Contact.css";
 
 const ContactPage = () => {
   return (
-    <div className="App">
+    <div className="contact-page">
       Contact Page
       <form>
         <div className="input">
