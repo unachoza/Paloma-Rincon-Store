@@ -5,6 +5,7 @@ import About from "./Pages/About.js";
 import Contact from "./Pages/Contact/Contact.js";
 import Logo from "./Components/Logo/Logo";
 import ProductList from './Components/ProductList/ProductList'
+import Dropdown from './Components/Dropdown/Dropdown'
 
 
 const App = () => {
@@ -14,8 +15,6 @@ const App = () => {
       try {
         const response = await fetch('http://localhost:8001/products');
         const data = await response.json();
-        // this.setState({ simpsons: data });
-        console.log({ data })
         setProducts(data)
       } catch (error) {
         console.log('there was an error', error);
@@ -29,7 +28,8 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <header className="App-header">
-            <Logo />
+          <Logo />
+          <Dropdown/>
         </header>
         <Switch>
         <Route exact path="/" render={(props) => <ProductList {...props} products={products} />} />
