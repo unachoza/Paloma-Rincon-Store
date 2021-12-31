@@ -1,0 +1,16 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 34px 17px;
+}
+li {
+  color: black;
+  font-family: roboto;
+  margin-bottom: 25px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: roboto;
+}
