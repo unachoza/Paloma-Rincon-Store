@@ -7,6 +7,7 @@ import Logo from "./Components/Logo/Logo";
 import ProductList from './Components/ProductList/ProductList'
 import Dropdown from './Components/Dropdown/Dropdown'
 import Navigation from './Components/Navigation/Navigation'
+import Footer from './Components/Footer/Footer'
 
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
           <Route exact path="/contact" render={(props) => <Contact {...props} />} />
         </Switch>
       </BrowserRouter>
+      <Footer/>
     </div>
   );
 }
