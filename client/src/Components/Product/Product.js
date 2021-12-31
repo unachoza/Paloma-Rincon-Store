@@ -1,10 +1,11 @@
 import React from "react";
+import "./Product.css"
 
 const Product = ( props) => {
-  console.log(props.prod.id)
   return (
     <div className="one">
-      {props ? <h1>{props.prod.id}</h1> : null}
+      <h1>{props.prod.title}</h1> 
+      <img src={props.prod.imageURL} alt="" />
   
     </div>
   );
