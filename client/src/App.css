@@ -20,6 +20,7 @@
   color: white;
   width: 20vw;
   float: left;
+  border: 1px solid black
 }
 
 .App-link {

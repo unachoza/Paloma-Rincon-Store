@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import About from "./Pages/About.js";
+import About from "./Pages/About/About.js";
 import Contact from "./Pages/Contact/Contact.js";
 import Logo from "./Components/Logo/Logo";
 import ProductList from './Components/ProductList/ProductList'
 import Dropdown from './Components/Dropdown/Dropdown'
+import Navigation from './Components/Navigation/Navigation'
 
 
 const App = () => {
@@ -29,7 +30,8 @@ const App = () => {
       <BrowserRouter>
         <header className="App-header">
           <Logo />
-          <Dropdown/>
+          <Dropdown />
+          <Navigation/>
         </header>
         <Switch>
         <Route exact path="/" render={(props) => <ProductList {...props} products={products} />} />

@@ -1,0 +1,25 @@
+.about-page{
+  margin-left: 20%;
+  padding: 70px 50px
+}
+.custom-page-content {
+  max-width: 750px;
+  width: 100%;
+}
+h1{
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 80px;
+  font-family: Bevan;
+  text-align: left;
+
+}
+p{
+  color: #0a0005;
+    font-family: Questrial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5em;
+    text-align: justify;
+    font-weight: 600;
+}
