@@ -8,6 +8,10 @@ import ProductList from './Components/ProductList/ProductList'
 import Dropdown from './Components/Dropdown/Dropdown'
 import Navigation from './Components/Navigation/Navigation'
 import Footer from './Components/Footer/Footer'
+import Page from './Pages/Page/Page'
+import Form from './Components/Form/Form'
+import DotRing from './Components/Cursor/Cursor'
+// import {About, Shipping, Contact} from './Content/Content'
 
 
 const App = () => {
@@ -32,12 +36,15 @@ const App = () => {
         <header className="App-header">
           <Logo />
           <Dropdown />
-          <Navigation/>
+          <Navigation />
+          <DotRing/>
         </header>
         <Switch>
         <Route exact path="/" render={(props) => <ProductList {...props} products={products} />} />
           <Route exact path="/about" render={(props) => <About {...props} />} />
-          <Route exact path="/contact" render={(props) => <Contact {...props} />} />
+          <Route exact path="/contact" render={(props) =>
+            // <Page {...props} title={Contact.title}/>
+            <Contact {...props} />} />
         </Switch>
       </BrowserRouter>
       <Footer/>
